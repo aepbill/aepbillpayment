@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f9fb;
+    color: #1a2433;
+}
+header {
+    background: #143d59;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffac1c;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffac1c;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem 2rem 1rem;
+}
+.hero {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hero h1 {
+    color: #143d59;
+    margin-top: 0;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+.tagline {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.bill-pay-form {
+    max-width: 350px;
+    margin: 0 auto 1.5rem auto;
+    display: grid;
+    gap: 1rem;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #b9c4ce;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+input:focus {
+    border-color: #143d59;
+    outline: none;
+}
+button {
+    background: #ffac1c;
+    color: #143d59;
+    font-weight: bold;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+button:hover, button:focus {
+    background: #f29b09;
+    color: #fff;
+}
+.form-success {
+    color: #2e7d32;
+    background: #eaf9ea;
+    border: 1px solid #c2f0c2;
+    border-radius: 7px;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+.feature-section {
+    background: #f9fafb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.feature-section h2 {
+    color: #143d59;
+}
+.faq-section details {
+    margin-bottom: 1rem;
+}
+.faq-section summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #143d59;
+}
+.contact-section {
+    padding: 1.5rem;
+    background: #fff9eb;
+    border-radius: 10px;
+}
+.contact-section a {
+    color: #143d59;
+    text-decoration: underline;
+}
+footer .container {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem 0;
+    font-size: 0.98rem;
+    color: #7a7a7a;
+}
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+@media (max-width: 600px) {
+    header .container, main {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .hero {
+        padding: 1.5rem 0.3rem;
+    }
+}
